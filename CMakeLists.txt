@@ -6,4 +6,4 @@ set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR}/lib)
 
 add_library(beamer src/logger.cpp src/file.cpp)
 
-target_include_directories(beamer PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}")
+target_include_directories(beamer PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/src")
