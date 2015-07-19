@@ -1,9 +1,9 @@
-#ifndef __LOGGER_COMMON_H__
-#define __LOGGER_COMMON_H__
+#ifndef __BEAMER_COMMON_H__
+#define __BEAMER_COMMON_H__
 
 #include "logger.hpp"
 
-namespace httptth
+namespace beamer
 {
 
 class priority_limited_transport : public transport
@@ -23,6 +23,6 @@ private:
     logger::level log_limit;
 };
 
-}// namespace httptth
+} // namespace beamer
 
-#endif // __LOGGER_COMMON_H__
+#endif // __BEAMER_COMMON_H__

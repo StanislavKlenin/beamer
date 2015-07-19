@@ -6,7 +6,7 @@
 
 using namespace std;
 
-namespace httptth
+namespace beamer
 {
 
 file_transport::file_transport(const char *filename, logger::level limit) :
@@ -51,4 +51,4 @@ void file_transport::format(logger::level level, const char *format, ...)
     va_end(args);
 }
 
-} // namespace httptth
+} // namespace beamer

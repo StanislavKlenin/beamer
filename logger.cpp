@@ -2,7 +2,7 @@
 
 #include <stdarg.h>
 
-namespace httptth
+namespace beamer
 {
 
 logger::logger(std::unique_ptr<transport> t)
@@ -35,4 +35,4 @@ const char * logger::level_names[] = {
     "DEBUG"
 };
 
-} // namespace httptth
+} // namespace beamer

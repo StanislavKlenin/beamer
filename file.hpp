@@ -1,11 +1,11 @@
-#ifndef __LOGGER_FILE_H__
-#define __LOGGER_FILE_H__
+#ifndef __BEAMER_FILE_H__
+#define __BEAMER_FILE_H__
 
 #include "common.hpp"
 
 #include <string>
 
-namespace httptth
+namespace beamer
 {
 
 class file_transport : public priority_limited_transport
@@ -37,6 +37,6 @@ public:
     virtual ~stderr_transport() {}
 };
 
-}// namespace httptth
+} // namespace beamer
 
-#endif // __LOGGER_FILE_H__
+#endif // __BEAMER_FILE_H__

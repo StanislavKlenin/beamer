@@ -6,10 +6,8 @@
 #include <memory>
 #include <vector>
 
-namespace httptth
+namespace beamer
 {
-
-// namespace log // ?
 
 class transport;
 
@@ -62,7 +60,7 @@ public:
 public:
     virtual ~transport() {}
     
-    // perform actual logging  
+    // perform actual logging
     virtual void log(logger::level level, const char *data, size_t length) = 0;
     
     // printf-like logging
@@ -96,6 +94,6 @@ void logger::format(logger::level level, const char *format, A ...args)
     }
 }
 
-} // namespace httptth
+} // namespace beamer
 
 #endif // __LOGGER_H__
